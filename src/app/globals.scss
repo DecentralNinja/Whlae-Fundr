@@ -1,0 +1,33 @@
+
+@import "StylingFiles/components/variables";
+@import "StylingFiles/components/mixins";
+
+@import "StylingFiles/pageModules/header";
+@import "StylingFiles/pageModules/main";
+@import "StylingFiles/pageModules/footer";
+@import "StylingFiles/pageModules/nav";
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #040114;
+}
+
+#Background {
+  height: 100vh;
+  width: 100%;
+}
+

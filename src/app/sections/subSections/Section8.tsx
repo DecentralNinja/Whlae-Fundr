@@ -1,0 +1,33 @@
+import React from "react";
+import Image from 'next/image'
+import { montserrat,roboto } from "@/app/layout";
+
+const Section8 = () => {
+  return (
+    <section id="section8">
+      <div id="content8">
+        <h2 className={montserrat.className}>Payout System</h2>
+        <p className={roboto.className}>
+          The default payout ratio for all FTMO Traders is set to 80%, however,
+          an 80% share is not where we draw the line.
+        </p>
+        <p className={roboto.className}>
+          All FTMO Traders can request payout on-demand. The payout can be
+          processed just after 14 days, but you also have the ability to choose
+          your own Profit Split Day, which can be even changed up to three
+          times. In conclusion, we make sure that you will always receive your
+          withdrawal on your most convenient day.
+        </p>
+        <p className={roboto.className}>
+          If you meet the conditions of our Scaling Plan, not only do we
+          increase the balance of your FTMO Account by 25%, the payout ratio
+          will also automatically change to a staggering 90 %!
+        </p>
+      </div>
+      <div id='rect'></div>
+       <Image src={'/pic15.png'} alt='' height={664} width={470} id='tablet1'/>
+    </section>
+  );
+};
+
+export default Section8;

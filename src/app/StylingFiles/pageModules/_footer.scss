@@ -1,0 +1,155 @@
+#Footer {
+  display: flex;
+  flex-direction: column;
+  #footer1 {
+    background: #131b22;
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    @include breakpoint (smallPhones) {
+      padding-top: 0;
+    }
+    #ContentFooter {
+      width: 1400px;
+      background: transparent;
+      display: flex;
+      padding: 0px 5vw;
+      justify-content: space-between; 
+      @include breakpoint (Desktop) {
+        width: 100%;
+        padding: 0px 20px;
+      }
+      @include breakpoint (Laptops) {
+        flex-direction: column-reverse;
+      }
+      @include breakpoint (largePhones) {
+        padding: 0 10px;
+      }
+      #leftSide {
+        width: 40%;
+        margin-top: 20px;
+        @include breakpoint (Laptops) {
+          width: 600px;
+        }
+        @include breakpoint (Tablets) {
+          width: 100%;
+        }
+        p {
+          font-size: $p;
+          font-weight: $p6weight;
+          color: $white;
+          width: 370px;
+          @include breakpoint (Laptops) {
+            width: 100%;
+          }
+        }
+        #content {
+          margin-top: 20px;
+          h5 {
+            font-size: $h5;
+            font-weight: $h5weight;
+          }
+          li {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            p {
+              margin-left: 10px;
+            }
+          } //li
+        } //content
+      } //leftSide
+      #rightSide {
+        display: flex;
+        column-gap: 80px;
+        @include breakpoint (largePhones) {
+          flex-direction: column;
+        }
+        .layer {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          @include breakpoint (largePhones) {
+            margin-top: 40px;
+          }
+          h4 {
+            font-size: $h5;
+            font-weight: $h5weight;
+          }
+          ul {
+            li {
+              list-style-type: none;
+              font-size: $p;
+              font-weight: $p6weight;
+              color: $white;
+              margin-top: 10px;
+            }
+          } //ul
+        } //layer
+      } //rightSide
+    } //ContentFooter
+  } //footer1
+  #footer2 {
+    background: $blue;
+    width: 100%;
+    padding: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    #ContentFooter2 {
+      width: 1400px;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 30px;
+      @include breakpoint (Desktop) {
+        width: 100%;
+        padding: 0px 20px;
+      }
+      @include breakpoint (Tablets) {
+        padding: 0 10px;
+      }
+      #termsandCoditions {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint (Tablets) {
+          flex-direction: column;
+        }
+        p {
+          font-size: $p;
+          font-weight: $p6weight;
+          color: $white;
+          width: 950px;
+          @include breakpoint (Laptops) {
+            width: 100%;
+          }
+        }
+        div {
+          margin-left: 20px;
+          @include breakpoint (Tablets) {
+            margin-left: 0;
+            margin-top: 15px;
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+      } //termsandConditions
+      #footerdownBar {
+        margin-top: 20px;
+        padding-top: 10px;
+        border-top: 3px solid $black;
+        h4 {
+          font-size: 15px;
+          font-weight: $p6weight;
+          color: $white;
+        }
+      }
+    } //ContentFooter
+  } //footer2
+} //Footer

@@ -1,0 +1,230 @@
+#forCenter {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #171616 60%, #092b47);
+  position: relative;
+  #HeroContent {
+    width: 1400px;
+    padding: 0px 30px;
+    padding-bottom: 100px;
+    position: relative;
+    @include breakpoint (Desktop) {
+      padding-bottom: 60px;
+    }
+    @include breakpoint (Laptops) {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+    @include breakpoint (largePhones) {
+      padding: 0px 20px;
+      padding-bottom: 120px;
+    }
+    @include breakpoint (smallPhones) {
+      padding: 0px 10px;
+      padding-bottom: 80px;
+    }
+  }
+  #image {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 0;
+    @include breakpoint (Desktop) {
+      width: 435px;
+      height: 526px;
+    }
+    @include breakpoint (Laptops) {
+      width: 335px;
+      height: 426px;
+    }
+    @include breakpoint (largePhones) {
+      top: 240px;
+      height: 350px;
+      width: 250px;
+    }
+    @include breakpoint (smallPhones) {
+      height: 290px;
+    }
+  }//image
+}//forCenter
+
+
+#Hero {
+  margin-top: 60px;
+  position: relative;
+  @include breakpoint (Laptops) {
+    margin-top: 40px;
+  }
+  h4 {
+    font-size: 16px;
+    color: $blue;
+    font-weight: $h4weight;
+    @include breakpoint (Desktop) {
+      font-size: 22px;
+    }
+    @include breakpoint (largePhones) {
+      font-size: 16px;
+    }
+  }
+  h1 {
+    font-size: $h3;
+    width: 800px;
+    font-weight: $h1weight;
+    @include breakpoint (Desktop) {
+      font-size: $h3;
+    }
+    @include breakpoint (Laptops) {
+      font-size: $h4;
+      width: 60%;
+    }
+    @include breakpoint (largePhones) {
+      width: 100%;
+      font-size: $h5;
+    }
+  }
+  p {
+    font-size: $p;
+    width: 600px;
+    margin-top: 20px;
+    font-weight: $p6weight;
+    @include breakpoint (Desktop) {
+      width: 50%;
+    }
+    @include breakpoint (largePhones) {
+      width: 60%;
+    }
+    @include breakpoint (smallPhones) {
+      width: 100%;
+      font-size: 13px;
+    }
+
+  }
+  #btns {
+    margin-top: 30px;
+    @include breakpoint (smallPhones) {
+      margin-top: 20px;
+    }
+  }
+  .margin1 {
+    @include breakpoint (largePhones) {
+      height: 40px;
+      width: 110px;
+      font-size: 13px
+    };
+    @include breakpoint (smallPhones) {
+      height: 30px;
+      width: 90px;
+      font-size: 10px;
+    }
+  }
+  .margin2 {
+    margin-left: 20px;
+    @include breakpoint (largePhones) {
+      height: 40px;
+      width: 110px;
+      font-size: 13px
+    }
+    @include breakpoint (smallPhones) {
+      height: 30px;
+      width: 90px;
+      font-size: 10px;
+      margin-left: 10px;
+    }
+  }
+  #acheive {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    @include breakpoint (largePhones) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    img {
+      width: 150px;
+      @include breakpoint (largePhones) {
+        width: 100px;
+      }
+    }
+    #text {
+      margin-left: 20px;
+      @include breakpoint (largePhones) {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+      h4 {color: $white; font-weight: $labelweight;
+        @include breakpoint (largePhones) {
+          font-size: 17px;
+        }
+      }
+      h5 {font-size: $p; font-weight: $p6weight;
+        @include breakpoint (largePhones) {
+          font-size: 12px;
+        }
+      }
+    } //text
+  } //acheive
+  #boxes {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    column-gap: 20px;
+    position: absolute;
+    top:  400px;
+    left: 5vw;
+    @include breakpoint (Desktop) {
+      position: relative;
+      top: 100px;
+      left: 0px;
+      margin-top: 0;
+    }
+    @include breakpoint (Laptops) {
+      width: 600px;
+      column-gap: 50px;
+      row-gap: 20px;
+      top: 60px;
+      flex-wrap: wrap;
+      flex: 1 1 100%;
+      left: 120px;
+    }
+    @include breakpoint (Tablets) {
+      display: none;
+    }
+    .card {
+      width: 30%;
+      padding: 30px;
+      background: $boxColor;
+      border-radius: 30px;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include breakpoint (Desktop) {
+        width: 250px;
+        padding: 20px;
+      }
+      h2 {
+        font-size: $h3;
+        font-weight: $h2weight;
+        color: $blue;
+        @include breakpoint (Desktop) {
+          font-size: $h4;
+        }
+        @include breakpoint (Laptops) {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-size: $p;
+        width: 600px;
+        margin-top: 20px;
+        font-weight: $p6weight;
+        width: 200px;
+        color: white;
+        text-align: center;
+        @include breakpoint (Laptops) {
+          font-size: 14px;
+        }
+      } //p
+    } //li
+  } //boxes
+} //Hero
