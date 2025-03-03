@@ -1,5 +1,5 @@
 import NormalCard from "@/app/components/NormalCards";
-import { montserrat, roboto } from "@/app/layout";
+import { montserrat} from "@/app/layout";
 import React from "react";
 
 const Section6 = () => {

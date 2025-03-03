@@ -20,7 +20,7 @@ function Nav() {
         </div> 
         <div id="navBtn">
           <button className="SearchiconBtn"> <i className="ri-search-line"></i></button>
-          <button className="flagIcon"><img src="/pic2.png" alt="" id="flag" /><p className={`${roboto.className}`}>ENG</p><i className="ri-arrow-down-s-line"></i></button>
+          <button className="flagIcon"><Image src="/pic2.png" alt="" id="flag" /><p className={`${roboto.className}`}>ENG</p><i className="ri-arrow-down-s-line"></i></button>
         </div>
       </section>
     </>

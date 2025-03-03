@@ -1,7 +1,4 @@
-import Btn1 from "@/app/components/Btn1";
-import Btn2 from "@/app/components/Btn2";
-import { montserrat ,roboto } from "@/app/layout";
-import Image from "next/image";
+import { montserrat } from "@/app/layout";
 import React from "react";
 import CardImg from "@/app/components/CardImg";
 

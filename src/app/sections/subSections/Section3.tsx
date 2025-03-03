@@ -1,5 +1,6 @@
 import Sec3Content from "@/app/components/sec3Content";
-import { montserrat,roboto } from "@/app/layout";
+import { montserrat} from "@/app/layout";
+import Image from "next/image";
 import React from "react";
 
 function Section3() {
@@ -29,8 +30,8 @@ function Section3() {
           height={50}
         />
       </article>
-      <img src="./pic12.png" alt="" id="graphic1" />
-      <img src="./pic11.png" alt="" id="graphic2"/>
+      <Image src="./pic12.png" alt="" id="graphic1" />
+      <Image src="./pic11.png" alt="" id="graphic2"/>
     </section>
   );
 }

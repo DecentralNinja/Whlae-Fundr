@@ -1,5 +1,6 @@
 import React from 'react'
 import Btn1 from '../components/Btn1'
+import Image from 'next/image'
 import Btn2 from '../components/Btn2'
 import { montserrat ,roboto } from "../layout";
 import Card from '../components/Card';
@@ -17,7 +18,7 @@ const HeroSection = () => {
     <Btn2 title='FreeTrial' class2='margin2'/>
     </div>
     <div id='acheive'>
-      <img src="./pic18.png" alt="" />
+      <Image src="./pic18.png" alt="" />
       <div id='text'>
         <h4 className={`${roboto.className}`}>15 Million+</h4>
         <h5 className={`${roboto.className}`}>Be part of growing community</h5>
