@@ -1,5 +1,4 @@
 import Sec3Content from "@/app/components/sec3Content";
-import Image from "next/image";
 import React from "react";
 
 function Section3() {
@@ -29,8 +28,8 @@ function Section3() {
           height={50}
         />
       </article>
-      <Image src="./pic12.png" alt="" id="graphic1" />
-      <Image src="./pic11.png" alt="" id="graphic2"/>
+      <img src="./pic12.png" alt="" id="graphic1" />
+      <img src="./pic11.png" alt="" id="graphic2"/>
     </section>
   );
 }
