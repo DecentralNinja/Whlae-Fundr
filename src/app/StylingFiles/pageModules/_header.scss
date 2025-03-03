@@ -59,6 +59,7 @@
     font-size: 16px;
     color: $blue;
     font-weight: $h4weight;
+    font-family: var(--font-geist-sans);
     @include breakpoint (Desktop) {
       font-size: 22px;
     }
@@ -70,6 +71,7 @@
     font-size: $h3;
     width: 800px;
     font-weight: $h1weight;
+    font-family: var(--font-geist-sans);
     @include breakpoint (Desktop) {
       font-size: $h3;
     }
@@ -87,6 +89,7 @@
     width: 600px;
     margin-top: 20px;
     font-weight: $p6weight;
+    font-family: var(--font-geist-mono);
     @include breakpoint (Desktop) {
       width: 50%;
     }
@@ -152,11 +155,13 @@
         margin-top: 20px;
       }
       h4 {color: $white; font-weight: $labelweight;
+        font-family: var(--font-geist-mono);
         @include breakpoint (largePhones) {
           font-size: 17px;
         }
       }
       h5 {font-size: $p; font-weight: $p6weight;
+        font-family: var(--font-geist-mono);
         @include breakpoint (largePhones) {
           font-size: 12px;
         }

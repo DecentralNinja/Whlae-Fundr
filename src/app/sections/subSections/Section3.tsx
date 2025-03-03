@@ -1,12 +1,11 @@
 import Sec3Content from "@/app/components/sec3Content";
-import { montserrat} from "@/app/layout";
 import Image from "next/image";
 import React from "react";
 
 function Section3() {
   return (
     <section id="section3">
-      <h2 className={`${montserrat.className}`}>Evaluation Process</h2>
+      <h2>Evaluation Process</h2>
       <article>
         <Sec3Content
           image="/challenge.svg"

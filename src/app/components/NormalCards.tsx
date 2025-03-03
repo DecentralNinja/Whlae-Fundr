@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { montserrat,roboto } from "@/app/layout";
+
 
 interface MyCardclass {
     clas: string,
@@ -14,9 +14,9 @@ const NormalCard = ({clas, title, text, heightImg, widthImg}: MyCardclass) => {
   return (
     <div className='Card'>
         <Image src={clas} alt='' height={heightImg} width={widthImg}/>
-        <h5 className={montserrat.className}>{title}</h5>
-        <p className={roboto.className}>{text}</p>
-    </div>
+        <h5>{title}</h5>
+        <p>{text}</p>
+  </div>
   )
 }
 

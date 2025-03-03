@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import { montserrat,roboto } from "@/app/layout";
 import ArrowBtn from "@/app/components/ArrowBtn";
 
 
 function Section4() {
   return (
     <section id="section4">
-      <h2 className={`${montserrat.className}`}>Know your <span>Trading Objectives</span></h2>
-      <p className={`${roboto.className}`}>
+      <h2 >Know your <span>Trading Objectives</span></h2>
+      <p >
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout. The point of
         using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -17,15 +16,15 @@ function Section4() {
       </p>
       <ul id="obj">
         <li >
-          <h4 className={`${montserrat}`}>Currency:</h4>
-          <button className="flagIcon"><img src="/pic2.png" alt="" id="flag" /><p className={`${roboto.className}`}>USD</p><i className="ri-arrow-down-s-line"></i></button>
+          <h4>Currency:</h4>
+          <button className="flagIcon"><img src="/pic2.png" alt="" id="flag" /><p>USD</p><i className="ri-arrow-down-s-line"></i></button>
         </li>
         <li className="marginlef">
-          <h4 className={`${montserrat}`}>Normal:</h4>
+          <h4>Normal:</h4>
           <ArrowBtn title="Normal" class1="margin1" icon="ri-arrow-down-s-line" />
         </li>
         <li className="marginlef">
-          <h4 className={`${montserrat}`}>Balance:</h4>
+          <h4>Balance:</h4>
           <ArrowBtn title="$200,000" class1="margin1" icon="ri-arrow-down-s-line"/>
         </li>
       </ul>

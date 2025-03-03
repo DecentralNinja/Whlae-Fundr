@@ -1,11 +1,10 @@
 import NormalCard from "@/app/components/NormalCards";
-import { montserrat} from "@/app/layout";
 import React from "react";
 
 const Section6 = () => {
   return (
     <section id="section6">
-      <h2 className={montserrat.className}>Key Hightlights</h2>
+      <h2>Key Hightlights</h2>
       <div id="layer">
         <NormalCard
           clas="/Vector.png"

@@ -1,15 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { montserrat, roboto } from "@/app/layout";
 
 const Section9 = () => {
   return (
     <section id="section9">
       <div id="content9">
-        <h2 className={montserrat.className}>
+        <h2>
           The most popular retail trading platforms
         </h2>
-        <p className={roboto.className}>
+        <p>
           We offer all our clients the best trading solution in the form of our
           MT4, MT5, DXtrade and cTrader accounts powered by data feed directly
           from our pool of prime liquidity providers. We do our best to simulate

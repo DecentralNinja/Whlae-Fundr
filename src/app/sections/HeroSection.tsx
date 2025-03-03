@@ -1,8 +1,7 @@
 import React from 'react'
 import Btn1 from '../components/Btn1'
 import Image from 'next/image'
-import Btn2 from '../components/Btn2'
-import { montserrat ,roboto } from "../layout";
+import Btn2 from '../components/Btn2';
 import Card from '../components/Card';
 
 
@@ -10,9 +9,9 @@ const HeroSection = () => {
   return (
     <>
     <section id='Hero'>
-    <h4 className={`${montserrat.className}`}>SINCE 2021</h4>
-    <h1 className={`${montserrat.className}`}>WE ARE LOOKING FOR PROFITABLE TRADERS</h1>
-    <p className={`${roboto.className}`}>Unleash your inner whale and trade up to $500,000 in a trading environment where you can earn real gains.</p>
+    <h4>SINCE 2021</h4>
+    <h1>WE ARE LOOKING FOR PROFITABLE TRADERS</h1>
+    <p>Unleash your inner whale and trade up to $500,000 in a trading environment where you can earn real gains.</p>
     <div id='btns'>
     <Btn1 title='Learn More' class1='margin1'/>
     <Btn2 title='FreeTrial' class2='margin2'/>
@@ -20,8 +19,8 @@ const HeroSection = () => {
     <div id='acheive'>
       <Image src="./pic18.png" alt="" />
       <div id='text'>
-        <h4 className={`${roboto.className}`}>15 Million+</h4>
-        <h5 className={`${roboto.className}`}>Be part of growing community</h5>
+        <h4>15 Million+</h4>
+        <h5>Be part of growing community</h5>
       </div>
     </div>
     <ul id='boxes'>

@@ -1,4 +1,3 @@
-import { montserrat } from "@/app/layout";
 import React from "react";
 import CardImg from "@/app/components/CardImg";
 
@@ -6,7 +5,7 @@ function Section1() {
   return (
     <>
       <section id="section1">
-        <h2 className={`${montserrat.className}`}>
+        <h2>
           <span>WhaleFundr</span> is one of the most reliable firms in modern prop trading
           industry.
         </h2>

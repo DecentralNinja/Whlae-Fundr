@@ -2,13 +2,13 @@ import { Montserrat, Roboto } from "next/font/google";
 import 'remixicon/fonts/remixicon.css';
 import "./globals.scss";
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ["100","200","500","600","700","800"]
 });
 
-export const roboto = Roboto({
+const roboto = Roboto({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: ["100","300","400", "500", "700"]
