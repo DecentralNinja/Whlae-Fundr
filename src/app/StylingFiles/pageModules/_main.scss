@@ -112,6 +112,9 @@
             }
             .brandImage1 {
               width: 150px;
+              @include breakpoint (smallPhones) {
+                width: 130px;
+              }
             }
             .brandImage {
               width: 130px;
@@ -682,6 +685,7 @@
             text-align: center;
           }
           @include breakpoint (smallPhones) {
+            width: 100%;
             font-size: $h5;
           }
           span {
