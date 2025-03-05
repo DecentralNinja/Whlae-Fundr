@@ -45,12 +45,18 @@
           @include breakpoint (Laptops) {
             width: 100%;
           }
+          @include breakpoint (smallPhones) {
+            font-size: 15px;
+          }
         }
         #content {
           margin-top: 20px;
           h5 {
             font-size: $h5;
             font-weight: $h5weight;
+            @include breakpoint (smallPhones) {
+              font-size: 20px;
+            }
           }
           li {
             margin-top: 20px;
@@ -58,6 +64,9 @@
             align-items: center;
             p {
               margin-left: 10px;
+              @include breakpoint (smallPhones) {
+                font-size: 15px;
+              }
             }
           } //li
         } //content
@@ -68,6 +77,12 @@
         @include breakpoint (largePhones) {
           flex-direction: column;
         }
+        @include breakpoint (smallPhones) {
+          display: grid;  
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+          width: fit-content;
+        }
         .layer {
           display: flex;
           flex-direction: column;
@@ -76,8 +91,11 @@
             margin-top: 40px;
           }
           h4 {
-            font-size: $h5;
+            font-size: $h6;
             font-weight: $h5weight;
+            @include breakpoint (smallPhones) {
+              font-size: $lable;
+            }
           }
           ul {
             li {
@@ -86,6 +104,9 @@
               font-weight: $p6weight;
               color: $white;
               margin-top: 10px;
+              @include breakpoint (smallPhones) {
+                font-size: 15px;
+              }
             }
           } //ul
         } //layer
@@ -124,8 +145,18 @@
           font-weight: $p6weight;
           color: $white;
           width: 950px;
+          overflow: hidden;
+          max-height: 3.6em; // Adjust this value based on the number of lines you want to show initially
+          line-height: 1.2em; // Adjust this value based on your line height
+          transition: max-height 0.3s ease; // Add transition for smooth effect
+          &.expanded {
+            max-height: none; // Remove the max-height when expanded
+          }
           @include breakpoint (Laptops) {
             width: 100%;
+          }
+          @include breakpoint (smallPhones) {
+            font-size: 15px;
           }
         }
         div {
@@ -135,8 +166,11 @@
             margin-top: 15px;
           }
           h5 {
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 400;
+            @include breakpoint (smallPhones) {
+              font-size: $p;
+            }
           }
         }
       } //termsandConditions
@@ -148,6 +182,10 @@
           font-size: 15px;
           font-weight: $p6weight;
           color: $white;
+          @include breakpoint (largePhones) {
+            text-align: center;
+            font-size: 12px;
+          }
         }
       }
     } //ContentFooter

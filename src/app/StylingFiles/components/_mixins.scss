@@ -49,7 +49,7 @@
 
 @mixin breakpoint($point) {
   @if $point == smallPhones {
-    @media (max-width: 400px) { @content; }
+    @media (max-width: 461px) { @content; }
   }
   @else if $point == largePhones {
     @media (max-width: 600px) { @content; }

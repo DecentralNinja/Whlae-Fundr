@@ -15,11 +15,11 @@ const Footer = () => {
             <ul id="content">
               <h5>Contact Us</h5>
               <li>
-                <Image src={"/message.png"} alt="" height={22} width={30} />
+                <Image src={"/message.png"} alt="" height={19} width={25} />
                 <p>Noe_Rempel30@yahoo.com</p>
               </li>
               <li>
-                <Image src={"/phone.png"} alt="" height={22} width={22} />
+                <Image src={"/phone.png"} alt="" height={19} width={25} />
                 <p>275-437-1694</p>
               </li>
             </ul>

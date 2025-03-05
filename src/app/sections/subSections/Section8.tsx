@@ -17,7 +17,7 @@ const Section8 = () => {
           times. In conclusion, we make sure that you will always receive your
           withdrawal on your most convenient day.
         </p>
-        <p>
+        <p id="remove">
           If you meet the conditions of our Scaling Plan, not only do we
           increase the balance of your FTMO Account by 25%, the payout ratio
           will also automatically change to a staggering 90 %!
